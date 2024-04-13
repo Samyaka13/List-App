@@ -8,6 +8,39 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        typing: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden"
+          },
+          "100%": {
+            width: "100%"
+          }  
+        },
+        blink: {
+          "50%": {
+            borderColor: "transparent"
+          },
+          "100%": {
+            borderColor: "white"
+          }  
+        }
+      },
+      animation: {
+        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite",
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      colors:{
+        customBlue : '#004472',
+        blueNew : '#206cc9',
+        blue2 : '#5398ed',
+        
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
