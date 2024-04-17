@@ -1,76 +1,66 @@
-  "use client";
-  import { useState, useEffect } from 'react';
-  import React, { useRef } from 'react';
-  import Image from 'next/image';
-  import Typewriter from 'typewriter-effect';
-  import gif from '../../Images/hero.gif'
-  function Hero() {
+"use client"
+import { useState, useEffect } from 'react';
+import React, { useRef } from 'react';
+import Image from 'next/image';
+import Typewriter from 'typewriter-effect';
+import gif from '../../Images/hero.gif';
 
-    // const [typedText, setTypedText] = useState('');
-    // const textToType = 'LIST APP';
-    // const typingSpeed = 500;
-    // useEffect(() => {
-    //   let currentIndex = 0;
-    //   const typingInterval = setInterval(() => {
-    //     if (currentIndex < textToType.length) {
-    //       setTypedText(prevText =>  prevText + textToType[currentIndex]);
-    //       currentIndex++;
-    //     } else {
-    //       clearInterval(typingInterval);
-    //     }
-    //   }, typingSpeed);
+function Hero() {
+  return (
+    <div className=''>
+      <div id="hero" className="max-w-7xl flex flex-col relative lg:w-full sm:w-[56%]">
 
-    //   return () => clearInterval(typingInterval);
-    // }, []);
+        {/* For mobile view */}
+        <div className="md:hidden w-full">
+          <Image className='w-full' src={gif} alt="List App logo" />
+        </div>
 
-    return (
-      <div className=''>
-        <div id="hero" className="w-full max-w-7xl flex flex-col relative">
-          <div className="w-full h-screen flex items-center justify-center ">
-            <div className="w-2/3 text-left text-black">
-              <div className='text-6xl  font-bold '>
+        <div className="w-full h-screen flex items-center justify-center">
 
-                <Typewriter
-                  onInit={(typewriter) => {
-                    typewriter.typeString('<span style="color: black;">L</span>')
-                    typewriter.typeString('<span style="color: #black;">I</span>')
-                    typewriter.typeString('<span style="color: #black;">S</span>')
-                    typewriter.typeString('<span style="color: #black;">T</span>')
-                    typewriter.typeString('<span style="color: #f59e0b;">A</span>')
-                    typewriter.typeString('<span style="color: #f59e0b;">P</span>')
-                    typewriter.typeString('<span style="color: #f59e0b;">P</span>')
-                      // typewriter.typeString('<span style="color:blue;">List</span>')
-                      .pauseFor(2500)
-                      .start();
-                  }}
-                  options={{
-                    cursor: ''
-                  }}
-                />
-              </div>
-              <p className="text-gray-800  font-medium ml-1 leading-7 max-w-xl mt-8 mx-auto animate-slide-in-right">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
-                voluptatem quisquam praesentium assumenda reprehenderit, non fuga
-                dolorem delectus architecto sit blanditiis porro tempora laborum
-                eligendi, provident suscipit! Nihil, et iusto?
-              </p>
-              {/* <a
-              href="#"
-              className="inline-block mt-8 rounded-xl bg-black px-8 py-4 text-center font-semibold text-white animate-slide-in-left"
-            >
-              Get Started
-            </a> */}
-              <button className="inline-block mt-8 rounded-xl px-8 py-4 text-center font-semibold text-white animate-slide-in-left  bg-black hover:bg-yellow-600  border-b-4 border-yellow-600 hover:border-blue-500 ">
-                Get Started
-              </button>
+          <div className="w-2/3 text-left text-black">
+            <div className='text-6xl font-bold '>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter.typeString('<span style="color: black;">L</span>')
+                    .typeString('<span style="color: #black;">I</span>')
+                    .typeString('<span style="color: #black;">S</span>')
+                    .typeString('<span style="color: #black;">T</span>')
+                    .typeString('<span style="color: #f59e0b;">A</span>')
+                    .typeString('<span style="color: #f59e0b;">P</span>')
+                    .typeString('<span style="color: #f59e0b;">P</span>')
+                    .pauseFor(2500)
+                    .start();
+                }}
+                options={{
+                  cursor: ''
+                }}
+              />
             </div>
-            {/* <div className='flex-grow'></div> This will push the following box to the right */}
-            {/* <div className='bg-black h-full absolute right-0 w-96'>BOX</div> */}
+            <p className='text-gray-800 font-medium md:ml-1  text-center  md:text-left leading-7 max-w-xl mt-8 mx-auto animate-slide-in-right'>
+              Welcome to ListApp,
+              the premier Android-based Supplier Search app for the Pharmaceutical
+              & Healthcare Industry. Revolutionize your ordering process with <span className='font-bold text-yellow-600'>ListApp - Easy, Automated, and Efficient.</span>
+            </p>
+            {/*Button for mobile view */}
+            <button className="md:hidden inline-block mt-8 absolute left-[30%]  md: rounded-xl px-8 py-4 text-center font-semibold text-white animate-slide-in-left bg-black hover:bg-yellow-600 border-b-4 border-yellow-600 hover:border-blue-500">
+              Get Started
+            </button>
+            {/*Button for web view */}
+            <button className=" mt-8 hidden md:inline-block md: rounded-xl px-8 py-4 text-center font-semibold text-white animate-slide-in-left bg-black hover:bg-yellow-600 border-b-4 border-yellow-600 hover:border-blue-500">
+              Get Started
+            </button>
           </div>
-          <Image className='animate-slide-in-right absolute  
-        left-3/4 top-48' src= {gif} alt="List App logo" />
-        </div>        
+
+        </div>
+
+        {/* For desktop view */}
+        <div className="hidden md:block">
+          <Image className='animate-slide-in-right absolute left-3/4 top-48' src={gif} alt="List App logo" />
+        </div>
+
       </div>
-    );
-  }
-  export default Hero;
+    </div>
+  );
+}
+
+export default Hero;

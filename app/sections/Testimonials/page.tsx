@@ -4,8 +4,8 @@ import React from "react";
 type Props = {};
 function Testimonials({}: Props) {
   return (
-    <div className="  mb-10">
-    <section className="relative z-0 ">
+    <div className="z-0">
+    <section className="relative ">
       <div className="mx-auto max-w-7xl text-black px-5 py-16 md:px-10 md:py-24 lg:py-32">
         {" "}
         {/* Container */}{" "}
@@ -162,15 +162,8 @@ function Testimonials({}: Props) {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center">
-         
-        </div>
+        
       </div>
-      {/* <img
-        src="https://assets.website-files.com/63904f663019b0d8edf8d57c/639174a3de7d11bdf3ccbf01_Frame%20427322885.svg"
-        alt=""
-        className="absolute bottom-[auto] left-[auto] right-[0%] top-[0%] -z-10 inline-block max-[767px]:hidden"
-      /> */}
     </section>
     </div>
   );

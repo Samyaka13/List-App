@@ -11,6 +11,9 @@
     transform: translateX(0);
   }
 }
+html{
+  scroll-behavior: smooth;
+}
 
 @keyframes slideInLeft {
   from {
@@ -44,7 +47,21 @@ button:hover > span {
   }
 }
 
+@keyframes slidedown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .animate-slide-up {
+  animation: slideUp 1s ease forwards;
+}
+
+.animate-slide-down {
   animation: slideUp 1s ease forwards;
 }
 

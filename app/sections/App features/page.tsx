@@ -8,21 +8,21 @@
 //   const Page = () => {
 //     const featuresRef = useRef(null);
 //     const [isFeaturesInView, setIsFeaturesInView] = useState(false);
-  
+
 //     useEffect(() => {
 //       const handleScroll = () => {
 //         if (featuresRef.current) {
 //           const top = featuresRef.current.getBoundingClientRect().top;
 //           const bottom = featuresRef.current.getBoundingClientRect().bottom;
-  
+
 //           // Check if the features section is in view
 //           setIsFeaturesInView(top < window.innerHeight && bottom >= 0);
 //         }
 //       };
-  
+
 //       // Attach scroll event listener
 //       window.addEventListener('scroll', handleScroll);
-  
+
 //       // Clean up
 //       return () => {
 //         window.removeEventListener('scroll', handleScroll);
@@ -102,6 +102,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import mockup1 from '../../Images/MockUp1.png';
+import mockup2 from '../../Images/MockUp2.png';
+import mockup3 from '../../Images/MockUp3.png';
+import mockup4 from '../../Images/MockUp4.png';
+import mockup5 from '../../Images/MockUp5.png';
+import mockup6 from '../../Images/MockUp6.png';
 
 const Page = () => {
   const featuresRef = useRef<HTMLDivElement>(null);
@@ -129,29 +134,58 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="h-screen mb-10">
+    
       <div className="flex flex-col justify-center items-center h-full">
-        <h2 className={`text-7xl font-semibold animate-slide-in-left mt-12 text-yellow-500 ${isFeaturesInView ? '' : 'invisible'}`}><span className='text-black'>Our </span>Application's
-          <span className='text-black'>   features</span></h2>
-        <div className='flex p-16 justify-evenly items-center space-x-12' ref={featuresRef}>
+        <h2 className={`md:text-7xl text-5xl md:mb-0 mb-6  font-semibold animate-slide-in-left  text-yellow-500`}><span className='text-black'>Our </span>Application's
+          <span className='text-black'> features</span></h2>
+        <div className='flex md:flex-row flex-col md:p-16 justify-evenly items-center md:space-x-12' >
           <div className='flex flex-col animate-slide-up '>
             <Image className='flex h-96 w-96 hover:scale-125 transition-all scale-110 ' src={mockup1} alt="List App logo" />
-            <p className='text-black w-3/4 text-center mt-10 flex justify-center'>Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Officia, corporis.</p>                    
+            <p className='text-black  text-center md:mt-10 md:mb-0 mb-5 mt-5 flex-col justify-center'>
+              <span className='font-bold'>Lorem, ipsum dolor <br />
+            </span>Lorem ipsum, dolor sit amet consectetur
+             adipisicing elit. Deserunt non itaque consequatur nobis? Culpa, tempore.</p>
           </div>
           <div className='flex flex-col animate-slide-up '>
-            <Image className='flex   h-96 w-96 hover:scale-125 transition-all scale-110 ' src={mockup1} alt="List App logo" />
-            <p className='text-black w-3/4 text-center mt-10 flex justify-center'>Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Officia, corporis.</p>
+            <Image className='flex   h-96 w-96 hover:scale-125 transition-all scale-110 ' src={mockup6} alt="List App logo" />
+            <p className='text-black  text-center md:mt-10 md:mb-0 mb-5 mt-5 flex-col justify-center'>
+              <span className='font-bold'>Lorem, ipsum dolor <br />
+            </span>Lorem ipsum, dolor sit amet consectetur
+             adipisicing elit. Deserunt non itaque consequatur nobis? Culpa, tempore.</p>
           </div>
           <div className='flex flex-col animate-slide-up '>
-            <Image className='flex  h-96 w-96 hover:scale-125 transition-all translate-x-10 scale-110 ' src={mockup1} alt="List App logo" />
-            <p className='text-black w-3/4 text-center mt-10 flex justify-center'>Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Officia, corporis.</p>
+            <Image className='flex   h-96 w-96 hover:scale-125 transition-all scale-110 ' src={mockup4} alt="List App logo" />
+            <p className='text-black  text-center md:mt-10 md:mb-0 mb-5 mt-5 flex-col justify-center'>
+              <span className='font-bold'>Lorem, ipsum dolor <br />
+            </span>Lorem ipsum, dolor sit amet consectetur
+             adipisicing elit. Deserunt non itaque consequatur nobis? Culpa, tempore.</p>
+          </div>
+
+        </div>
+        <div className='flex md:flex-row flex-col md:p-16 justify-evenly items-center md:space-x-12  '>
+          <div className='flex flex-col animate-slide-up '>
+            <Image className='flex   h-96 w-96 hover:scale-125 transition-all scale-110 ' src={mockup2} alt="List App logo" />
+            <p className='text-black  text-center md:mt-10 md:mb-0 mb-5 mt-5 flex-col justify-center'>
+              <span className='font-bold'>Lorem, ipsum dolor <br />
+            </span>Lorem ipsum, dolor sit amet consectetur
+             adipisicing elit. Deserunt non itaque consequatur nobis? Culpa, tempore.</p>
+          </div>
+          <div className='flex flex-col animate-slide-up '>
+            <Image className='flex   h-96 w-96 hover:scale-125 transition-all scale-110 ' src={mockup3} alt="List App logo" />
+            <p className='text-black  text-center md:mt-10 md:mb-0 mb-5 mt-5 flex-col justify-center'>
+              <span className='font-bold'>Lorem, ipsum dolor <br />
+            </span>Lorem ipsum, dolor sit amet consectetur
+             adipisicing elit. Deserunt non itaque consequatur nobis? Culpa, tempore.</p>
+          </div>
+          <div className='flex flex-col animate-slide-up '>
+            <Image className='flex   h-96 w-96 hover:scale-125 transition-all scale-110 ' src={mockup5} alt="List App logo" />
+            <p className='text-black  text-center md:mt-10 md:mb-0 mb-5 mt-5 flex-col justify-center'>
+              <span className='font-bold'>Lorem, ipsum dolor <br />
+            </span>Lorem ipsum, dolor sit amet consectetur
+             adipisicing elit. Deserunt non itaque consequatur nobis? Culpa, tempore.</p>
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
