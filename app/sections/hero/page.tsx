@@ -47,9 +47,9 @@ function Hero() {
               Playstore
             </button> */}
             {/*Button for web view */}
-            <a className=" mt-8 w-48 flex  rounded-xl pl-[1rem] pt-4 pb-4 text-center font-semibold text-white animate-slide-in-left bg-black hover:bg-yellow-00 border-b-4 border-yellow-400 hover:border-blue-400"
+            <a className=" mt-8 w-48 h-[66px] flex  rounded-xl pl-[1rem] pt-4 pb-4 text-center font-semibold text-white animate-slide-in-left bg-black hover:bg-yellow-00 border-b-4 border-yellow-400 hover:border-blue-400"
            href='https://bit.ly/Li-Download' target='_blank'>
-             <Image className = "h-10 w-10 relative -left-4"  src={play} alt = "playstore"></Image> 
+             <Image className = "h-10 w-10 relative -top-1 -left-2"  src={play} alt = "playstore"></Image> 
              <span className='mt-2 relative -left-1.5'>PlayStore</span><span className='text-white relative -left-20  -top-1 text-xs font-light'>GET IT ON</span>
              </a>
 

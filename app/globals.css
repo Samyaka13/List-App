@@ -14,7 +14,9 @@
 html{
   scroll-behavior: smooth;
 }
-
+.animate-on-scroll{
+  animation-fill-mode: both;
+}
 @keyframes slideInLeft {
   from {
     opacity: 0;

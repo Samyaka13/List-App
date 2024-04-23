@@ -1,7 +1,8 @@
-import React, { useRef } from 'react';
+"use client"
+import React, { use, useEffect, useRef } from 'react';
 import icon1 from '../../Images/icon1.png';
-import icon2 from '../../Images/icon2.png';
-import icon3 from '../../Images/icon3.png';
+import icon2 from '../../Images/icon2.svg';
+import icon3 from '../../Images/icon3.svg';
 import Image from 'next/image';
 
 type Props = {};
@@ -20,10 +21,10 @@ function Page({ }: Props) {
                          md:h-auto md:w-auto shadow-md hover:rounded-l-none
                          shadow-customBlue md:max-w-[30%]  border-gray-400 text-black
                      hover:border-blue-600   hover:scale-150 
-                      hover:border-l-2  hover:border-b-2 hover:cursor-pointer'>
+                      hover:border-2  hover:border-b-2  hover:cursor-default'>
                             <div className='flex flex-col items-center '>
-                                <Image src={icon1} alt="icon1" className='h-16 z-0 w-16 mt-5 scale-150 ' />
-                                <p className='mt-3 text-xl md:text-2xl font-semibold z-10 text-center '>Search By Medicine/Products</p>
+                                <Image src={icon1} alt="icon1" className='h-11 z-0 w-11 mt-5 scale-150 ' />
+                                <p className='mt-4 text-xl md:text-2xl font-semibold z-10 text-center '>Search By Medicine/Products</p>
                             </div>
                             <p className='mt-5 text-md md:text-xl ml-8 mr-10 text-left text-[#636262] font-serif'>
                             Instantly find your desired medicine or product by name. Get detailed descriptions and availability information for each item. Locate nearby stores stocking the product for
@@ -33,7 +34,7 @@ function Page({ }: Props) {
                      md:h-auto md:w-auto md:max-w-[30%]  shadow-md hover:rounded-l-none
                          shadow-customBlue border-gray-400 text-black
                      hover:border-blue-600   hover:scale-150 
-                      hover:border-l-2  hover:border-b-2 hover:cursor-pointer'>
+                      hover:border-2   hover:cursor-default'>
                             <div className='flex flex-col items-center'>
                                 <Image src={icon2} alt="icon2" className='h-16 z-0 w-16 mt-5 ' />
                                 <p className='  mt-3 text-xl md:text-2xl font-semibold z-10 '>Search by Company</p>
@@ -49,9 +50,9 @@ function Page({ }: Props) {
                          md:h-auto md:w-auto shadow-md hover:rounded-l-none
                          shadow-customBlue md:max-w-[30%]  border-gray-400 text-black
                      hover:border-blue-600   hover:scale-150 
-                      hover:border-l-2  hover:border-b-2 hover:cursor-pointer'>
+                      hover:border-2  hover:border-b-2  hover:cursor-default'>
                             <div className='flex flex-col items-center'>
-                                <Image src={icon3} alt="icon3" className='h-16  z-0 w-16 mt-4 ' />
+                                <Image src={icon3} alt="icon3" className='h-16 scale-125  z-0 w-16 mt-4 ' />
                                 <p className='mt-3 text-xl md:text-2xl font-semibold z-10'>Search by Supplier</p>
                             </div>
                             <p className='mt-5 text-md md:text-xl ml-8 mr-10 font-serif text-left text-[#636262] '> Easily locate medicines supplied by a

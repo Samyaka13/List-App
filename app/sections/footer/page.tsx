@@ -6,12 +6,12 @@ type Props = {};
 
 function Page({ }: Props) {
     return (
-        <div id='footer' className="border-t-2 rounded-t-lg  border-customBlue text-black py-8 bottom-0">
+        <div id='footer' className="border-t-2 rounded-t-lg relative top-0  border-customBlue text-black pt-10 pb-0 ">
 
             <div className="mx-auto px-8 md:h-full w-screen  bottom-0">
                 <div className="flex  md:flex-row flex-col items-center justify-between bottom-0">
                     {/*Mobile Links */}
-                    <nav className="md:hidden text-center absolute ">
+                    <nav className="md:hidden text-center absolute  ">
                         <ul className="flex md:flex-row flex-col  text-lg text-left  absolute right-0 ">
                             <div className=''>
                                 <li className='m-5'><Link href="#navbar" className="hover:text-customBlue hover:font-bold">Home</Link></li>
@@ -47,20 +47,20 @@ function Page({ }: Props) {
                         <span className="text-4xl font-semibold">ListApp</span>
                     </div>
                     {/*Md */}
-                    <nav className="hidden md:block text-center absolute ">
+                    <nav className="hidden md:block text-center absolute pt-0 ">
                         <ul className="flex md:flex-row flex-col justify-evenly ml-96 md:space-x-6 text-lg md:text-left    ">
                             <div className='md:pt-32 pr-3'>
-                                <li className='m-5'><Link href="#hero" className="hover:text-customBlue hover:font-bold">Home</Link></li>
-                                <li className='m-5 '><Link href="https://bit.ly/Li-Recharge" target="_blank" className="hover:text-customBlue hover:font-bold">Recharge</Link></li>
-                                <li className='m-5 pr-8'><Link href="https://bit.ly/ListApp-Supplier-Registration" target="_blank" className="hover:text-customBlue hover:font-semibold">Registration</Link></li>
+                                <li className='m-5'><Link href="#hero" className="hover:text-customBlue hover:transition-all duration-200">Home</Link></li>
+                                <li className='m-5 '><Link href="https://bit.ly/Li-Recharge" target="_blank" className="hover:text-customBlue hover:transition-all duration-200">Recharge</Link></li>
+                                <li className='m-5 pr-8'><Link href="https://bit.ly/ListApp-Supplier-Registration" target="_blank" className="hover:text-customBlue hover:transition-all duration-200 ">Registration</Link></li>
                             </div>
                             <div className=' md:pt-32 pr-32 pb-32 pl-6'>
-                                <li className='m-5' ><Link href="http://bit.ly/LiDataUpdate" target="_blank" className="hover:text-customBlue hover:font-bold">Download Sample ListApp File </Link></li>
-                                <li className='m-5'><Link href="https://api.whatsapp.com/send?phone=917987202207&text=Hi%2C%0AI%20wish%20to%20know%20more%20about%20listing%20on%20ListApp" target="_blank" className="hover:text-customBlue hover:font-bold">Priority Listing & Advertising</Link></li>
-                                <li className='m-5'><Link href="#features" className="hover:text-customBlue hover:font-bold">Features</Link></li>
+                                <li className='m-5' ><Link href="http://bit.ly/LiDataUpdate" target="_blank" className="hover:text-customBlue hover:transition-all duration-200">Download Sample ListApp File </Link></li>
+                                <li className='m-5'><Link href="https://api.whatsapp.com/send?phone=917987202207&text=Hi%2C%0AI%20wish%20to%20know%20more%20about%20listing%20on%20ListApp" target="_blank" className="hover:text-customBlue hover:transition-all duration-200">Priority Listing & Advertising</Link></li>
+                                <li className='m-5'><Link href="#features" className="hover:text-customBlue hover:transition-all duration-200">Features</Link></li>
                             </div>
                             <div className=' md: pl-0 w-13 relative -left-28 pb-0 pt-32'>
-                                <li className='m-5' ><Link href="https://bit.ly/Li-OrderList" target="_blank" className="hover:text-customBlue hover:font-bold">OrderList</Link></li>
+                                <li className='m-5' ><Link href="https://bit.ly/Li-OrderList" target="_blank" className="hover:text-customBlue hover:transition-all duration-200">OrderList</Link></li>
                             </div>
                             
                         </ul>

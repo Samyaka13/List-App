@@ -13,7 +13,7 @@ function YourComponent() {
         setIsHovered(false);
     };
     return (
-        <div className="fixed bottom-4 rounded-full  bg-[#25D366] hover:-translate-x-6 transition-all right-4 z-50">
+        <div className="fixed bottom-2 rounded-full  bg-[#25D366] hover:-translate-x-6 transition-all right-4 z-50">
             <a
                 className={` z-10 relative rounded-full p-3  inline-block  font-bold leading-normal text-white shadow-md
                  transition duration-150 ease-in-out `} href='https://bit.ly/Li-WhatsApp' target='_blank'>

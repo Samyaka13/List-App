@@ -10,7 +10,8 @@ import Slider from "./sections/slider/page";
 import Fab from "./sections/Fab/page"
 export default function Home() {
   return (
-    <div className="bg-white mb-10 w-full overflow-hidden  ">
+    <>
+    <div className="bg-white overflow-hidden  ">
       {/* bg-gradient-to-b from-blue-300 to-white   */}
 
 <div className="md:z-40">
@@ -24,7 +25,7 @@ export default function Home() {
           <Slider />
         </div>
         <div className="z-20">
-          <Fab />
+          <Fab /> 
         </div>
       </div>
       <Features />
@@ -32,7 +33,11 @@ export default function Home() {
         <Testimonials />
       </div>
       <App_Features />
+      <div className="relative bottom-4">
       <Footer />
+
+      </div>
     </div>
+    </>
   );
 }
