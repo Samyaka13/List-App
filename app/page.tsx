@@ -15,7 +15,7 @@ export default function Home() {
       {/* bg-gradient-to-b from-blue-300 to-white   */}
 
 <div className="md:z-40">
-      <Navbar />
+      {/* <Navbar /> */}
 
 </div>
 
