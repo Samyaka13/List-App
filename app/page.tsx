@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       <Features />
       <div className="-z-50">
-        {/* <Testimonials /> */}
+        <Testimonials />
       </div>
       <App_Features />
       <div className="relative bottom-4">
