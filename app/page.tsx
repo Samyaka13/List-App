@@ -13,24 +13,26 @@ export default function Home() {
     <div className="bg-white mb-10 w-full overflow-hidden  ">
       {/* bg-gradient-to-b from-blue-300 to-white   */}
 
-
+<div className="md:z-40">
       <Navbar />
+
+</div>
 
       <Hero />
       <div>
         <div className="z-0">
           <Slider />
         </div>
-        {/* <div className="z-20">
+        <div className="z-20">
           <Fab />
-        </div> */}
+        </div>
       </div>
       <Features />
-      <div className="-z-10">
+      <div className="-z-50">
         <Testimonials />
       </div>
       <App_Features />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

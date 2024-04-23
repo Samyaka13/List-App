@@ -13,14 +13,11 @@ function YourComponent() {
         setIsHovered(false);
     };
     return (
-        <div className="fixed bottom-4 rounded-full  bg-[#25D366] hover:-translate-x-6 transition-all right-4">
-            <button
-                type="button"
-                data-twe-ripple-init
-                data-twe-ripple-color="light"
-                className=" z-10 relative rounded-full p-3  inline-block  font-bold leading-normal text-white shadow-md
-                 transition duration-150 ease-in-out ">
-                <span className=" [&>svg]:h-12 [&>svg]:w-12 flex items-center justify-center">
+        <div className="fixed bottom-4 rounded-full  bg-[#25D366] hover:-translate-x-6 transition-all right-4 z-50">
+            <a
+                className={` z-10 relative rounded-full p-3  inline-block  font-bold leading-normal text-white shadow-md
+                 transition duration-150 ease-in-out `} href='https://bit.ly/Li-WhatsApp' target='_blank'>
+                <span className=" [&>svg]:h-[2rem] [&>svg]:w-[2rem] flex items-center justify-center">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -38,10 +35,10 @@ function YourComponent() {
           4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
                     </svg>
                 </span>
-                <span className={`absolute p-2 right-16 top-4 border-spacing-1 shadow-md  shadow-black  rounded-none opacity-0 
+                <p className={`absolute p-2 right-16 top-4 border-spacing-1 shadow-md  shadow-black  rounded-none opacity-0 
             bg-[#25D366]  font-semibold text-lg text-white  transition-all duration-300
-             hover:opacity-100 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>Inquiry</span>
-            </button>
+             hover:opacity-100 ${isHovered ? 'opacity-100' : 'opacity-0'}`} >Inquiry</p>
+            </a>
         </div>
     );
 }

@@ -6,32 +6,68 @@ type Props = {};
 
 function Page({ }: Props) {
     return (
-        <div id='footer' className=" scroll-m-2 border-t-2 rounded-t-lg  border-customBlue text-black py-8 bottom-0">
+        <div id='footer' className="border-t-2 rounded-t-lg  border-customBlue text-black py-8 bottom-0">
 
-            <div className="mx-auto px-8 h-full   bottom-0">
-                <div className="flex  items-center justify-between bottom-0">
-                    <div className="flex items-center">
+            <div className="mx-auto px-8 md:h-full w-screen  bottom-0">
+                <div className="flex  md:flex-row flex-col items-center justify-between bottom-0">
+                    {/*Mobile Links */}
+                    <nav className="md:hidden text-center absolute ">
+                        <ul className="flex md:flex-row flex-col  text-lg text-left  absolute right-0 ">
+                            <div className=''>
+                                <li className='m-5'><Link href="#navbar" className="hover:text-customBlue hover:font-bold">Home</Link></li>
+                                <li className='m-5'><Link href="https://bit.ly/Li-Recharge" target="_blank" className="hover:text-customBlue hover:font-bold">Recharge</Link></li>
+                                <li className='m-5'><Link href="https://bit.ly/ListApp-Supplier-Registration" target="_blank" className="hover:text-customBlue hover:font-bold">Registration</Link></li>
+                                <li className='m-5' ><Link href="https://bit.ly/Li-OrderList" target="_blank" className="hover:text-customBlue hover:font-bold">OrderList </Link></li>
+                                <li className='m-5'><Link href="https://api.whatsapp.com/send?phone=917987202207&text=Hi%2C%0AI%20wish%20to%20know%20more%20about%20listing%20on%20ListApp" target="_blank" className="hover:text-customBlue hover:font-bold">Priority Listing & Advertising</Link></li>
+                                <li className='m-5'><Link href="#features" className="hover:text-customBlue hover:font-bold">Features</Link></li>
+                                <li className='m-5'><Link href="http://bit.ly/LiDataUpdate" className="hover:text-customBlue hover:font-bold">Download Sample ListApp File</Link></li>
+                            </div>
+                            
+                        </ul>
+                    </nav>
+                    {/*Mobile */}
+                    <div className="flex md:hidden  flex-col md:flex-row  pt-3 pb-14 items-center absolute left-14 mt-[396px]   text-black ">
+                        <div className='md:mt-0 mt-[8.5rem]'>
+                            <p className="text-base font-bold text-customBlue">AIC - 3rd Floor, Prestige Vihar,</p>
+                            <p className='text-base font-bold text-customBlue'>Scheme No. 74 Vijay Nagar, </p>
+                            <p className='text-base font-bold text-customBlue'>Indore, MP - 452010 </p>
+                            <br />
+                            <p className="text-base font-bold text-customBlue">Email: support@listapp.in </p>
+                            <br />
+                            <p className="text-base font-bold text-customBlue">Phone: 9977773388</p>
+                        </div>
+                    </div>
+                    {/*Logo Mobile */}
+                    <div className=" flex md:hidden absolute left-10 pt-3  items-center mt-[360px]">
+                        <Image className='w-14 h-14 mr-3' src={logo} alt="" />
+                        <span className="text-4xl/[15.5rem] font-semibold">ListApp</span>
+                    </div>
+                    <div className=" hidden md:flex items-center">
                         <Image className='w-14 h-14 mr-3' src={logo} alt="" />
                         <span className="text-4xl font-semibold">ListApp</span>
                     </div>
-                    <nav className="text-center absolute ">
-                        <ul className="flex justify-evenly ml-96 space-x-6 text-lg text-left    ">
-                            <div className='pt-32'>
-                                <li className='m-5'><Link href="#navbar" className="hover:text-customBlue hover:font-bold">Home</Link></li>
-                                <li className='m-5'><Link href="#offerLi" target="_blank" className="hover:text-customBlue hover:font-bold">OfferLi</Link></li>
-                                <li className='m-5'><Link href="https://docs.google.com/forms/d/e/1FAIpQLSeo8Dxk4f7ier_yct-uopFmQd3D2rYW5L_fYAExhxa_3_evQg/viewform" target="_blank" className="hover:text-customBlue hover:font-bold">Registartion</Link></li>
+                    {/*Md */}
+                    <nav className="hidden md:block text-center absolute ">
+                        <ul className="flex md:flex-row flex-col justify-evenly ml-96 md:space-x-6 text-lg md:text-left    ">
+                            <div className='md:pt-32 pr-3'>
+                                <li className='m-5'><Link href="#hero" className="hover:text-customBlue hover:font-bold">Home</Link></li>
+                                <li className='m-5 '><Link href="https://bit.ly/Li-Recharge" target="_blank" className="hover:text-customBlue hover:font-bold">Recharge</Link></li>
+                                <li className='m-5 pr-8'><Link href="https://bit.ly/ListApp-Supplier-Registration" target="_blank" className="hover:text-customBlue hover:font-semibold">Registration</Link></li>
                             </div>
-                            <div className='p-32'>
-                                <li className='m-5' ><Link href="https://bit.ly/Li-Sub" target="_blank" className="hover:text-customBlue hover:font-bold">Recharge </Link></li>
-                                <li className='m-5'><Link href="#home" target="_blank" className="hover:text-customBlue hover:font-bold">Priority Listing & Advertising</Link></li>
-                                <li className='m-5'><Link href="#features"  className="hover:text-customBlue hover:font-bold">Features</Link></li>
+                            <div className=' md:pt-32 pr-32 pb-32 pl-6'>
+                                <li className='m-5' ><Link href="http://bit.ly/LiDataUpdate" target="_blank" className="hover:text-customBlue hover:font-bold">Download Sample ListApp File </Link></li>
+                                <li className='m-5'><Link href="https://api.whatsapp.com/send?phone=917987202207&text=Hi%2C%0AI%20wish%20to%20know%20more%20about%20listing%20on%20ListApp" target="_blank" className="hover:text-customBlue hover:font-bold">Priority Listing & Advertising</Link></li>
+                                <li className='m-5'><Link href="#features" className="hover:text-customBlue hover:font-bold">Features</Link></li>
                             </div>
-                            <div className='p-10'>
+                            <div className=' md: pl-0 w-13 relative -left-28 pb-0 pt-32'>
+                                <li className='m-5' ><Link href="https://bit.ly/Li-OrderList" target="_blank" className="hover:text-customBlue hover:font-bold">OrderList</Link></li>
                             </div>
+                            
                         </ul>
                     </nav>
-                    <div className="flex items-center ml-10   text-black ">
-                        <div>
+                    {/*Md */}
+                    <div className="hidden md:flex  flex-col md:flex-row  items-center ml-10   text-black ">
+                        <div className='md:mt-0 mt-10'>
                             <p className="text-base font-bold text-customBlue">AIC - 3rd Floor, Prestige Vihar,</p>
                             <p className='text-base font-bold text-customBlue'>Scheme No. 74 Vijay Nagar, </p>
                             <p className='text-base font-bold text-customBlue'>Indore, MP - 452010 </p>
@@ -47,3 +83,4 @@ function Page({ }: Props) {
     );
 }
 export default Page;
+
