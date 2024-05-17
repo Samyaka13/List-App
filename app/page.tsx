@@ -34,7 +34,7 @@ export default function Home() {
         <Testimonials />
       </div>
       <App_Features />
-      <div className="relative bottom-4">
+      <div className="md:relative md:bottom-7 absolute bottom-18 ">
       <Footer />
 
       </div>

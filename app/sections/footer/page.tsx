@@ -41,6 +41,7 @@ function Page({ }: Props) {
                         <Image className='w-14 h-14 mr-3' src={logo} alt="" />
                         <span className="text-4xl/[15.5rem] font-semibold">ListApp</span>
                     </div>
+                     {/*Logo Mobile */}
                     <div className=" hidden md:flex items-center">
                         <Image className='w-14 h-14 mr-3' src={logo} alt="" />
                         <span className="text-4xl font-semibold">ListApp</span>
