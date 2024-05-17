@@ -18,7 +18,7 @@ function Page({ }: Props) {
           <span className='text-black'> features</span></h2>
         <div className='flex md:flex-row flex-col md:p-16 justify-evenly items-center md:space-x-12' >
           <div className='flex flex-col animate-slide-up '>
-            <Image className='md:relative md:left-[7rem] flex h-96 w-96 hover:scale-125 transition-all scale-110 ' src={mockup1} alt="List App logo" />
+            <Image className='md:relative md:left-[4rem] flex h-96 w-96 hover:scale-125 transition-all scale-110 ' src={mockup1} alt="List App logo" />
             <p className=' text-[#636262]  font-serif   text-center  md:mb-0 mb-5 mt-5 flex-col justify-center'>
               <span className='font-bold text-black text-center font-sans '>Register with ease <br />
             </span>Register effortlessly and unlock a wealth of features. Get started with ease and harness

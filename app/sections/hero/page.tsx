@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import gif from '../../Images/hero.gif';
 import play from '../../Images/PlayStore.png'
-import Link from 'next/link';
 function Hero() {
   return (
     <div className=''>
