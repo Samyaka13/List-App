@@ -17,7 +17,7 @@ export default function Home() {
 <div className="md:z-40">
       <Navbar />
 
-</div>
+</div >
 
       <Hero />
       {/* <Hero />*/}
