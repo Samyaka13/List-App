@@ -12,7 +12,7 @@ function Hero() {
       <div id="hero" className="max-w-7xl flex flex-col relative lg:w-full sm:w-[56%]">
 
         {/* For mobile view */}
-        <div className="md:hidden w-full pb-28 h-0">
+        <div className="md:hidden w-full pb-28 h-0 z-20">
           <Image className='w-full' src={gif} alt="List App logo" />
         </div>
 
@@ -59,7 +59,7 @@ function Hero() {
 
         {/* For desktop view */}
         <div className="hidden md:block">
-          <Image className='animate-slide-in-right absolute left-3/4 top-48' src={gif} alt="List App logo" />
+          <Image className='animate-slide-in-right absolute left-[90%] top-[17rem]' src={gif} alt="List App logo" />
         </div>
 
       </div>

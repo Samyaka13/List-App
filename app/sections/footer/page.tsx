@@ -6,10 +6,9 @@ type Props = {};
 
 function Page({ }: Props) {
     return (
-        <div id='footer' className="border-t-2 rounded-t-lg relative top-0  border-customBlue text-black pt-10 pb-0 ">
-
+        <div id='footer' className="border-t-2 rounded-t-lg relative top-0  border-customBlue text-black pt-10 pb-0">
             <div className="mx-auto px-8 md:h-full w-screen  bottom-0">
-                <div className="flex  md:flex-row flex-col items-center justify-between bottom-0">
+                <div className="flex md:flex-row flex-col items-center justify-between bottom-0">
                     {/*Mobile Links */}
                     <nav className="md:hidden text-center absolute  ">
                         <ul className="flex md:flex-row flex-col  text-lg text-left  absolute right-0 ">
@@ -22,11 +21,11 @@ function Page({ }: Props) {
                                 <li className='m-5'><Link href="#features" className="hover:text-customBlue hover:font-bold">Features</Link></li>
                                 <li className='m-5'><Link href="http://bit.ly/LiDataUpdate" className="hover:text-customBlue hover:font-bold">Download Sample ListApp File</Link></li>
                             </div>
-                            
+
                         </ul>
                     </nav>
                     {/*Mobile */}
-                    <div className="flex md:hidden  flex-col md:flex-row  pt-3 pb-14 items-center absolute left-14 mt-[396px]   text-black ">
+                    <div className="flex md:hidden  flex-col md:flex-row  pt-3 pb-14 items-center absolute left-14 mt-[396px]  text-black ">
                         <div className='md:mt-0 mt-[8.5rem]'>
                             <p className="text-base font-bold text-customBlue">AIC - 3rd Floor, Prestige Vihar,</p>
                             <p className='text-base font-bold text-customBlue'>Scheme No. 74 Vijay Nagar, </p>
@@ -62,7 +61,7 @@ function Page({ }: Props) {
                             <div className=' md: pl-0 w-13 relative -left-28 pb-0 pt-32'>
                                 <li className='m-5' ><Link href="https://bit.ly/Li-OrderList" target="_blank" className="hover:text-customBlue hover:transition-all duration-200">OrderList</Link></li>
                             </div>
-                            
+
                         </ul>
                     </nav>
                     {/*Md */}
@@ -71,7 +70,7 @@ function Page({ }: Props) {
                             <p className="text-base font-bold text-customBlue">AIC - 3rd Floor, Prestige Vihar,</p>
                             <p className='text-base font-bold text-customBlue'>Scheme No. 74 Vijay Nagar, </p>
                             <p className='text-base font-bold text-customBlue'>Indore, MP - 452010 </p>
-                            <br />
+                            <br/>
                             <p className="text-base font-bold text-customBlue">Email: support@listapp.in </p>
                             <br />
                             <p className="text-base font-bold text-customBlue">Phone: 9977773388</p>
@@ -83,4 +82,3 @@ function Page({ }: Props) {
     );
 }
 export default Page;
-

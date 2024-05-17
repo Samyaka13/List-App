@@ -38,7 +38,7 @@ const Navbar = () => {
         </ul>
       </nav>
       {showMenu && (
-        <div className="md:hidden  flex absolute right-1 bg-white bg-opacity-95 shadow-lg pl-2 rounded-t-none rounded-r-none border-l-1 border-b-1 shadow-gray-500 border-gray-500 rounded-md font-medium w-[35%] animate-slide-in-right  text-left  duration-75 ">
+        <div className="md:hidden z-30 flex absolute right-2 bg-white bg-opacity-95 shadow-lg pl-2 rounded-t-none rounded-r-none border-l-1 border-b-1 shadow-gray-500 border-gray-500 rounded-md font-medium w-[35%] animate-slide-in-right  text-left  duration-75 ">
           <ul className="flex relative  left-0 flex-col text-black gap-5  ">
             <li className="cursor-pointer text-md text-black hover:transition-all duration-200 hover:text-customBlue hover:font-bold "><Link href="#navbar">Home</Link></li>
             <li className="cursor-pointer text-md text-black hover:transition-all duration-200 hover:text-customBlue hover:font-bold "><Link href="#features">Features</Link></li>

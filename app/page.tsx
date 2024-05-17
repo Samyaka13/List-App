@@ -20,7 +20,7 @@ export default function Home() {
 </div>
 
       <Hero />
-      <Hero />
+      {/* <Hero />*/}
       <div>
         <div className="z-0">
           <Slider />
